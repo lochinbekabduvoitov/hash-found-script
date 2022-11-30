@@ -3,7 +3,7 @@
 read -p "Enter file name: " NAME
 
 RESULT=`md5sum $NAME`
-FILES=$( ls *.txt *.docs *.pdf *.html  )
+FILES=$( ls *.txt *.doc *.pdf *.html *.sh *.md *.png *.jpeg *.jpg *.docx *.xls *.xlsx *.ppt *.pptx )
 
 
 for FILE in $FILES
@@ -11,7 +11,7 @@ for FILE in $FILES
         HASHING=`md5sum $FILE`
         if [ "$RESULT" == "$HASHING" ]
         then 
-            echo "Succes"
+            echo "Succes $HASHING "
         else
             echo "Not found"
         fi
