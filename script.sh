@@ -101,3 +101,54 @@
 #         echo "Pleace enter y/yes or n/no"
 #         ;;
 # esac
+
+#SIMPLE FOR LOOP
+# NAMES="Lochinbek Aduvoitov"
+
+# for NAME in $NAMES
+#     do 
+#         echo "Hello $NAME"
+# done
+
+
+#FOR LOOP TO RENAME FILES 
+# FILES=$( ls *.txt)
+# NEW="new"
+
+# for FILE in $FILES
+#     do
+#      echo "Renaming $FILE to new-$FILE"
+#      mv $FILE $NEW-$FILE
+# done
+
+
+#WHILE LOOP - READ THRUGH A FILE LINE BY LINE
+
+# LINE=1
+# while read -r CURRENT_LINE
+#     do
+#         echo "$LINE: $CURRENT_LINE"
+#         ((LINE++))
+# done < "./new-1.txt"
+
+#FUNCTION
+
+# function sayHello(){
+#     echo "Hello World"
+# }
+
+# sayHello
+
+
+#FUNCTION WITH PARAMS
+
+# function greet(){
+#     echo "Hello , I am $1 and I am $2"
+# }
+
+# greet "Lochinbek" "22"
+
+# mkdir hello 
+# touch "hello/world.txt"
+# echo "Hello world" >> "hello/world.txt"
+# echo "Created hello/world.txt"
