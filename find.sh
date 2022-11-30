@@ -11,7 +11,7 @@ for FILE in $FILES
         HASHING=`md5sum $FILE`
         if [ "$RESULT" == "$HASHING" ]
         then 
-            echo "Succes $HASHING "
+            echo "Succes $HASHING  file is founded"
         else
             echo "Not found"
         fi
