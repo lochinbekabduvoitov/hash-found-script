@@ -4,9 +4,29 @@
 
 read -p "Enter file name: " NAME
 
-sudo md5sum $NAME = RESULT
+RESULT=`md5sum $NAME`
+FILES=$( ls *.txt)
+HASHING=`md5sum $FILES`
 
-echo "$RESULT"
+for FILE in $HASHING
+    do
+        if [ "$RESULT" == "$FILE" ]
+        then 
+            echo "Succes"
+        else
+            echo "Not found"
+        fi
+done
+    
+
+# echo "$RESULT"
+
+# if [ "$RESULT" == "$FILES" ]
+# then 
+#     echo "Success"
+# else
+#     echo "Not found"
+# fi
 
 # FOR LOOP TO RENAME FILES 
 # FILES=$( ls *.txt)
