@@ -5,12 +5,13 @@
 read -p "Enter file name: " NAME
 
 RESULT=`md5sum $NAME`
-FILES=$( ls *.txt)
-HASHING=`md5sum $FILES`
+FILES=$( ls *.txt *.docs *.pdf *.html  )
 
-for FILE in $HASHING
+
+for FILE in $FILES
     do
-        if [ "$RESULT" == "$FILE" ]
+        HASHING=`md5sum $FILE`
+        if [ "$RESULT" == "$HASHING" ]
         then 
             echo "Succes"
         else
