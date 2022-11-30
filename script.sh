@@ -72,3 +72,32 @@
 #     echo "$NUM1 is less then $NUM2"
 # fi
 
+
+
+#FILE CONDITIONS
+
+# FILE="test.txt"
+
+# if [ -e "$FILE" ]
+# then 
+#     echo "$FILE is a file"
+# else
+#     echo "$FILE is a NOT file"
+# fi
+    
+
+#CASE STATEMENT
+
+# read -p "Are you 21 or over Y/N" ANSWER
+
+# case "$ANSWER" in
+#     [yY] | [yY][eE][sS])
+#         echo "You can have a beer :)"
+#         ;;
+#     [nN] | [nN][oO])
+#         echo "Sorry , no drinking"
+#         ;;
+#         *)
+#         echo "Pleace enter y/yes or n/no"
+#         ;;
+# esac
