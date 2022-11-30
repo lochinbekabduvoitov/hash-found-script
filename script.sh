@@ -111,7 +111,7 @@
 # done
 
 
-#FOR LOOP TO RENAME FILES 
+# FOR LOOP TO RENAME FILES 
 # FILES=$( ls *.txt)
 # NEW="new"
 
